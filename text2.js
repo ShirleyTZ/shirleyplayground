@@ -1,35 +1,23 @@
 var timer;
-var logomenuUls = document.getElementById("logomenuUl").getElementsByTagName("li");
-var xiaomishoujiuls = document.getElementsByClassName("xiaomishoujiul");
-var m = 0;
-function fnLisOver(m) {
+var xiaomishoujili = document.getElementById("xiaomishoujili");
+var xiaomishoujiul = document.getElementById("xiaomishoujiul");
+xiaomishoujili.onmouseover = function() {
   clearTimeout(timer);
-  xiaomishoujiuls[m].style.cssText = "display:block";
+  xiaomishoujiul.style.cssText = "display:block";
 }
-fnLisOver();
-function fnLisOut(m) {
+xiaomishoujili.onmouseout = function() {
   timer = setTimeout(function() {
-    xiaomishoujiuls[m].style.cssText = "display:none";
+    xiaomishoujiul.style.cssText = "display:none";
   },500);
 }
-fnLisOut();
-function fnDivsOver(m) {
+ 
+xiaomishoujiul.onmouseover = function() {
   clearTimeout(timer);
-  xiaomishoujiuls[m].style.cssText = "display:block";
+  xiaomishoujiul.style.cssText = "display:block";
 }
-fnDivsOver();
-function fnDivsOut(m) {
-  xiaomishoujiuls[m].style.cssText = "display:none";
-}
-fnDivsOut();
-for( var q = 0 ; q < logomenuUls.length - 1; q++) {
-  logomenuUls[q].index = q;
-  logomenuUls.onmouseover = function() {
-    fnLisOver(this.index);
-    fnLisOut(this.index);
-    fnDivsOver(this.index);
-    fnDivsOut(this.index);
-  }
+
+xiaomishoujiul.onmouseout = function() {
+  xiaomishoujiul.style.cssText = "display:none";
 }
 
 

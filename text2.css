@@ -96,7 +96,7 @@ body {
 }
 
 
-.xiaomishoujiul {
+#xiaomishoujiul {
   width: 100%;
   height:160px;
   position: absolute;
@@ -106,11 +106,11 @@ body {
   background-color: black;
   z-index: 1;
 }
-.xiao1 {
+#xiao1 {
   width:1226px;
   margin: auto;
 }
-.xiao1 div {
+#xiao1 div {
   width: 140px;
   height:140px;
   margin-right: 10px;
