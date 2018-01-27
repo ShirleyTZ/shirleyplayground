@@ -1,24 +1,15 @@
-var timer;
-var xiaomishoujili = document.getElementById("xiaomishoujili");
-var xiaomishoujiul = document.getElementById("xiaomishoujiul");
-xiaomishoujili.onmouseover = function() {
-  clearTimeout(timer);
-  xiaomishoujiul.style.cssText = "display:block";
-}
-xiaomishoujili.onmouseout = function() {
-  timer = setTimeout(function() {
-    xiaomishoujiul.style.cssText = "display:none";
-  },500);
-}
- 
-xiaomishoujiul.onmouseover = function() {
-  clearTimeout(timer);
-  xiaomishoujiul.style.cssText = "display:block";
-}
+'use strict';
+var time;
 
-xiaomishoujiul.onmouseout = function() {
-  xiaomishoujiul.style.cssText = "display:none";
-}
+$('#nav-menu > li').each(function(index, menuItem) {
+  $(menuItem).hover(function() {
+    // 这里是鼠标移上去发生的事情
+    $(this).find('.nav-dropdown').css('display', 'block');
+  }, function() {
+    // 这里是鼠标移走发生的事情
+    $(this).find('.nav-dropdown').css('display', 'none');    
+  })
+});
 
 
 //自动轮播
