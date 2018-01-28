@@ -4,12 +4,28 @@ var time;
 $('#nav-menu > li').each(function(index, menuItem) {
   $(menuItem).hover(function() {
     // 这里是鼠标移上去发生的事情
-    $(this).find('.nav-dropdown').css('display', 'block');
-  }, function() {
-    // 这里是鼠标移走发生的事情
-    $(this).find('.nav-dropdown').css('display', 'none');    
-  })
+    var p = index;
+    $('#dropdownbox').css('display','block')
+    $('.nav-dropdown').eq(p).css('display', 'block');
+    $('.nav-dropdown :eq(p)').css('display','none');
+  },function() {  
+      // 这里是鼠标移走发生的事情
+      var p = index;
+      $('#dropdownbox').css('display','block')
+      $('.nav-dropdown').eq(p).css('display', 'none');  
+  } )
 });
+$('.nav-dropdown').each(function(index,dropdown) {
+  $('dropdown').hover(function() {
+    var q = index;
+    $('#dropdownbox').css('display','block')
+    $('.nav-dropdown').eq(q).css('display', 'block');
+  },function() {
+    var q = index;
+    $('#dropdownbox').css('display','none')
+    $('.nav-dropdown').eq(q).css('display', 'none');
+  })
+})
 
 
 //自动轮播
@@ -30,8 +46,8 @@ function auto(){
       nums[i -1].style.cssText = "background:none;";
     } else {
       box.style.left = "0px";
-      nums[4].style.cssText = "brackground:none;";
-      nums[0].style.cssText = "brackground-color:grey;";
+      nums[4].style.cssText = "background:none;";
+      nums[0].style.cssText = "background-color:grey;";
       i = 0;
     }
     console.log(i);

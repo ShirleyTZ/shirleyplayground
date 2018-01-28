@@ -79,12 +79,21 @@ body {
 
 .nav-dropdown {
   display: none;
-  background-color: #108ee9;
-  position: absolute;
+  width: 1226px;
+  height: 120px;
+  margin: auto;
   top: 50px;
-  left: 0;
+  background-color: pink;
+}
+#dropdownbox {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 230px;
   z-index: 1;
 }
+
 
 #logo {
   width: 50px;
