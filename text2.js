@@ -1,29 +1,28 @@
 'use strict';
 var time;
-
+//下拉框
 $('#nav-menu > li').each(function(index, menuItem) {
   $(menuItem).hover(function() {
     // 这里是鼠标移上去发生的事情
     var p = index;
-    $('#dropdownbox').css('display','block')
-    $('.nav-dropdown').eq(p).css('display', 'block');
-    $('.nav-dropdown :eq(p)').css('display','none');
+    $('#dropdownbox').css('display','block');
+    $('.nav-dropdown').eq(p).slideDown(1000);
   },function() {  
       // 这里是鼠标移走发生的事情
       var p = index;
-      $('#dropdownbox').css('display','block')
-      $('.nav-dropdown').eq(p).css('display', 'none');  
+          $('#dropdownbox').css('display','none');
+          $('.nav-dropdown').eq(p).css('display','none');
   } )
 });
 $('.nav-dropdown').each(function(index,dropdown) {
-  $('dropdown').hover(function() {
+  $(dropdown).hover(function() {
     var q = index;
-    $('#dropdownbox').css('display','block')
-    $('.nav-dropdown').eq(q).css('display', 'block');
+    $('#dropdownbox').css('display','block');
+    $('.nav-dropdown').eq(q).css('display','block');
   },function() {
     var q = index;
-    $('#dropdownbox').css('display','none')
-    $('.nav-dropdown').eq(q).css('display', 'none');
+    $('#dropdownbox').css('display','none');
+    $('.nav-dropdown').eq(q).css('display','none');
   })
 })
 
@@ -116,3 +115,28 @@ function buttontrans() {
     }
   }
 }
+
+
+//右拉框
+$('#article1left li').each(function(index,leftli) {
+  $(leftli).hover(function() {
+    var leftlis = index;
+    $('#articleleftBox').css('display','block');
+    $('.products').eq(leftlis).css('display','block');
+  },function() {
+    var leftlis = index;
+    $('#articleleftBox').css('display','none');
+    $('.products').eq(leftlis).css('display','none');
+  })
+})
+$('#articleleftBox').each(function(index,leftbox) {
+  $(leftbox).hover(function() {
+    var leftboxs = index;
+    $('#articleleftBox').css('display','block');
+    $('.products').eq(leftboxs).css('display','block');
+  },function() {
+    var leftboxs = index;
+    $('#articleleftBox').css('display','none');
+    $('.products').eq(leftboxs).css('display','none');
+  })
+})
