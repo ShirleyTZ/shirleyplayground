@@ -5,6 +5,7 @@ $('#nav-menu > li').each(function(index, menuItem) {
   $(menuItem).hover(function() {
     // 这里是鼠标移上去发生的事情
     var p = index;
+    $('.nav-dropdown').eq(p).siblings().css('display','none');
     $('#dropdownbox').css('display','block');
     $('.nav-dropdown').eq(p).slideDown(1000);
   },function() {  
@@ -129,7 +130,7 @@ $('#article1left li').each(function(index,leftli) {
     $('.products').eq(leftlis).css('display','none');
   })
 })
-$('#articleleftBox').each(function(index,leftbox) {
+$('.products').each(function(index,leftbox) {
   $(leftbox).hover(function() {
     var leftboxs = index;
     $('#articleleftBox').css('display','block');
@@ -140,3 +141,4 @@ $('#articleleftBox').each(function(index,leftbox) {
     $('.products').eq(leftboxs).css('display','none');
   })
 })
+
