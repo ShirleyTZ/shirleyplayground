@@ -1,11 +1,13 @@
 'use strict'
-$('.bottombutton').onclick = function(index){
-  if(index == 0) {
+$('#bottombutton1').click(function(){
     $("#home").css('display','block');
     $("#oneself").css('display','none')
-  } else { 
-    $("#home").css('display','none');
-    $("#oneself").css('display','block')
-  }
-}
-    
+})
+$('#bottombutton2').click(function(){
+  $("#home").css('display','none');
+  $("#oneself").css('display','block')
+})
+
+$('#peggyhtml').click(function() {
+  location.href = 'peggy.html';
+})

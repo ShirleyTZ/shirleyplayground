@@ -36,6 +36,7 @@ body {
 /*family*/
 #home {
     display: block;
+    padding-bottom: 120px;
 }
 #Family {
   width: 100%;
@@ -107,6 +108,7 @@ body {
 /*oneself*/
 #oneself {
     display: none;
+    padding-bottom: 120px;
 }
 #backgroundImg {
   height: 300px;

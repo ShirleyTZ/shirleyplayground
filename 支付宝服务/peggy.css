@@ -1,0 +1,136 @@
+body,li,ul,div,p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: "Helvetica Neue For Number", -apple-system, system-ui, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.clearfloat {
+  clear: both;
+}
+
+/*图片人物*/
+#peggybutton {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+}
+.buttonitem {
+  flex: 1;
+  font-size: 70px;
+}
+#buttonitem1 {
+  background-color: #0E62CF;
+}
+#buttonitem2 {
+  background-color: #043E79;
+}
+#peggyself {
+    padding: 0px 20px;
+}
+#message {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding: 20px 0px;
+}
+#peggyPhoto {
+  width: 150px;
+  height: 150px;
+  justify-content: flex-start;
+}
+#peggyInformation {
+  justify-content: flex-start;
+  padding-left: 20px;
+  flex: 1;
+}
+#name {
+  height: 50px;
+  line-height: 50px;
+  font-size: 45px;
+  color: black;
+}
+#age {
+  height: 30px;
+  line-height: 30px;
+  font-size: 25px;
+  color: grey;
+}
+#part {
+  height: 50px;
+  line-height: 50px;
+  font-size: 45px;
+  color: red;
+}
+p {
+  padding-bottom:10px; 
+}
+#aboutpeggy {
+  color: grey;
+  height: 150px;
+  font-size: 25px;
+}
+#line {
+  width: 100%;
+  height: 30px;
+  background-color: #EBEBEB;
+}
+#contact {
+  display: flex;
+  padding: 20px 0px;
+} 
+#peggyPhoto2 {
+  width: 90px;
+  height: 90px;
+  justify-content: flex-start
+}
+#peggyPhotoName {
+  flex: 1;
+  height: 90px;
+  line-height: 90px;
+  font-size: 85px;
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+#Contact p {
+  font-size: 30px;
+}
+#Contact {
+  padding: 20px 20px 30px 20px;
+}
+
+#serve {
+  padding: 0px 20px;
+  
+}
+#topItem {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.item1 {
+  height: 120px;
+  line-height: 120px;
+  font-size: 70px;
+  padding: 0px 10px;
+}
+#blockitem1 {
+  border-bottom: 3px solid blue;
+  color:#0E62CF;
+}
+.item1img {
+  width: 100%;
+  padding-top: 20px;
+  display: none;
+}
+#blockone {
+  display: block;
+}
+
