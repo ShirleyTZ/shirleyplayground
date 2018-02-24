@@ -31,6 +31,23 @@ body {
 #buttonitem2 {
   background-color: #043E79;
 }
+
+#topbutton {
+  padding: 0px 20px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 45px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+#topleftbutton,#toprightbutton {
+  color: #32A1EB;
+}
+#topcenter {
+  font-size: 55px;
+}
+
 #peggyself {
     padding: 0px 20px;
 }
@@ -118,7 +135,7 @@ p {
 .item1 {
   height: 120px;
   line-height: 120px;
-  font-size: 70px;
+  font-size: 55px;
   padding: 0px 10px;
 }
 #blockitem1 {

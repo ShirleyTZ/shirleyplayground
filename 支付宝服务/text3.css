@@ -33,6 +33,22 @@ body {
   margin-left: -55px;
 }
 
+#topbutton {
+  padding: 0px 20px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 45px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+#topleftbutton,#toprightbutton {
+  color: #32A1EB;
+}
+#topcenter {
+  font-size: 55px;
+}
+
 /*family*/
 #home {
     display: block;
@@ -147,17 +163,15 @@ body {
 #myserve {
   border-bottom: 1px solid black;
   background-color: white;
+  height: 90px;
+  line-height: 90px;
+  font-size: 45px;
 }
 #myserveleft {
-  height: 60px;
-  line-height: 60px;
-  font-size: 30px;
   float: left;
 }
 #myserveright {
-  height: 60px;
-  line-height: 60px;
-  font-size: 25px;
+  font-size: 35px;
   float: right;
 }
 #myserveUl {
@@ -169,18 +183,16 @@ body {
 #myIndent {
   border-bottom: 1px solid black;
   background-color: white;
+  height: 90px;
+  line-height: 90px;
+  font-size: 45px;
 }
 #myIndentleft {
-  height: 60px;
-  line-height: 60px;
-  font-size: 30px;
   float: left;
 }
 #myIndentright {
-  height: 60px;
-  line-height: 60px;
-  font-size: 25px;
- float: right;
+  font-size: 35px;
+  float: right;
 }
 #mystate {
   height: 90px;
