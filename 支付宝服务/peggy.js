@@ -10,6 +10,6 @@ $('.item1').click(function() {
 })
 
 $('#topleftbutton').click(function() {
-  history.back();
+  location.href = 'text3.html?backstatepage=0';
 })
   
